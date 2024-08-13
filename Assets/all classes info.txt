@@ -1,0 +1,15 @@
+Character Controller
+    InputHandler (handles pc and touch input)
+    PlayerMovementBase (basic variables and methods for initialization, movement related classes derive from this)
+        BasicMovementHandler (basic movement like walk, jog, sprint and turns)
+        BasicAirMovementHandler (basic falling, landing, rolling)
+        ParkourHandler (basic variables required for parkour, parkour related classes derive from this)
+            VaultHandler (all the obstacle vaults (low obstacles))
+            SlideCrouchHandler (handles sliding and crouching)
+            ClimbHandler (step up for low obstacles, climb for higher obstacles)
+            BasicJumpHandler (handles idle jumping, and movement jumping)
+            WallRunHandler (wall run)
+            LedgeMovementHandler (handles movement on and between ledges)
+        MovementObstructionHandler (see game features file (5. Legendary animation))
+    AnimatorHandler (setup related to mecanim and animations)
+    
